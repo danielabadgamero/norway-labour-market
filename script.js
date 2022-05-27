@@ -1,5 +1,5 @@
-const buttons = [...document.querySelectorAll("button")];
 const container = document.querySelector("main");
+const buttons = [...document.querySelector("header").querySelectorAll("button")];
 const spanishParagraphs = [...document.getElementsByClassName("spanish")];
 const englishParagraphs = [...document.getElementsByClassName("english")];
 let lang = "spanish";
@@ -40,7 +40,23 @@ function changeTab(tab) {
 }
 
 function changeLanguage(language) {
-  // WIP
+  switch (language) {
+    case "spanish":
+      spanishParagraphs.map((para) => {
+        para.classList.remove("hidden");
+      });
+      englishParagraphs.map((para) => {
+        para.classList.add("hidden");
+      });
+      break;
+    case "english":
+      spanishParagraphs.map((para) => {
+        para.classList.add("hidden");
+      });
+      englishParagraphs.map((para) => {
+        para.classList.remove("hidden");
+      });
+  }
 }
 
 buttons.map((button) => button.addEventListener("click", (e) => {
@@ -57,4 +73,15 @@ buttons[1].addEventListener("mouseenter", () => {
 
 document.querySelector("div.select").addEventListener("mouseleave", () => {
   document.querySelector("div.select").classList.add("hidden");
+})
+
+document.getElementById("change-lang").addEventListener("click", () => {
+  if (lang === "spanish") {
+    document.getElementById("change-lang").style.backgroundImage="url(./media/uk-flag.png)";
+    lang = "english"
+  } else {
+    document.getElementById("change-lang").style.backgroundImage="url(./media/spain-flag.png)";
+    lang = "spanish"
+  }
+  changeLanguage(lang);
 })
