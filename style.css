@@ -113,8 +113,8 @@ button {
 
 .select {
   position: absolute;
-  height: 200px;
-  width: 150px;
+  height: 170px;
+  width: 200px;
   background-color: hsl(229, 100%, 20%);
   top: calc(50% + 76px);
   left: 446px;
