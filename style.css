@@ -110,3 +110,19 @@ main ~ div, main > div {
 button {
   font-size: 0.9em;
 }
+
+.select {
+  position: absolute;
+  height: 200px;
+  width: 150px;
+  background-color: hsl(229, 100%, 20%);
+  top: calc(50% + 76px);
+  left: 446px;
+  border-radius: 10px;
+}
+
+div.select > button {
+  display: block;
+  margin: 10px;
+  width: 80%;
+}

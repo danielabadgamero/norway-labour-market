@@ -30,12 +30,17 @@ function changeTab(tab) {
     case "btn6":
       document.querySelector("div.bibliografia").classList.remove("hidden");
       break;
-    default:
+    case "select1":
+      document.querySelector("div.tipos").classList.remove("hidden");
+      break;
+    case "select2":
+      document.querySelector("div.noruega").classList.remove("hidden");
+      break;
   }
 }
 
 function changeLanguage(language) {
-
+  // WIP
 }
 
 buttons.map((button) => button.addEventListener("click", (e) => {
@@ -45,3 +50,11 @@ buttons.map((button) => button.addEventListener("click", (e) => {
     changeTab(e.target.id);
   }
 }));
+
+buttons[1].addEventListener("mouseenter", () => {
+  document.querySelector("div.select").classList.remove("hidden");
+})
+
+document.querySelector("div.select").addEventListener("mouseleave", () => {
+  document.querySelector("div.select").classList.add("hidden");
+})
