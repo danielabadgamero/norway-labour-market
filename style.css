@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Overlock+SC&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.hidden {
+  display: none !important;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: 	hsl(228, 100%, 11%);
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+}
+
+.header-image {
+  height: 50vh;
+}
+
+.title-image {
+  object-fit: cover;
+  object-position: 100% 50%;
+  height: 50vh;
+  width: 100vw;
+}
+
+.title {
+  position: absolute;
+  top: 10vh;
+  left: 25vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Overlock SC', cursive;
+  font-size: 7em;
+  color:hsl(0, 100%, 31%);
+  letter-spacing: 0.03em;
+}
+
+nav {
+  height: 100px;
+  width: 100vw;
+  background-color:hsla(0, 0%, 74%, 0.493);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: white;
+  font-weight: 500;
+  font-size: 1.1em;
+}
+
+.left-links {
+  display: flex;
+  list-style-type: none;
+  flex: 5;
+  padding: 0;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.home {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 2;
+  cursor: pointer;
+  border: none;
+  color: white;
+  background-color: transparent;
+}
+
+.right-links {
+  display: flex;
+  list-style-type: none;
+  flex: 2;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 0;
+}
+
+button:not(#home) {
+  padding: 15px 20px;
+  border: 2px solid black;
+  border-radius: 25px;
+  cursor: pointer;
+  background-color:hsl(229, 100%, 20%);
+  color: white;
+}
+
+button#home {
+  list-style: none;
+  border: none;
+  background-color: transparent;
+}
+
+main ~ div, main > div {
+  color: white;
+  margin: 100px 500px;
+  line-height: 1.5em;
+  text-align: justify;
+}
+
+button {
+  font-size: 0.9em;
+}
