@@ -19,6 +19,7 @@ body {
 main {
   padding: 100px 700px 100px 200px;
   background: url('./destinations-oslo-banner-mobile-1024x553.jpg');
+  background-size: 100%;
   color: black;
 }
 
