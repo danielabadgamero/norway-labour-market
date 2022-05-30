@@ -16,6 +16,10 @@ body {
   overflow-x: hidden;
 }
 
+main {
+  margin: 100px 500px;
+}
+
 .header-image {
   height: 50vh;
 }
