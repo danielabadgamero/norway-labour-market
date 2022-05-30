@@ -4,7 +4,7 @@ const buttons = [...document.querySelector("header").querySelectorAll("button")]
 function changeTab(tab) {
   [...container.children].forEach(element => {
     element.classList.add("hidden");
-  })
+  });
   if (tab === "home") {
     container.style.background = "url(./https://www.flytap.com/-/media/Flytap/new-tap-pages/destinations/europe/norway/oslo/destinations-oslo-banner-mobile-1024x553.jpg')";
     container.style.marginLeft = "200px";
@@ -13,6 +13,7 @@ function changeTab(tab) {
     container.style.background = "hsl(228, 100%, 11%)";
     container.style.marginLeft = "500px";
     container.style.marginRight = "500px";
+  }
   switch (tab) {
     case "btn1":
       document.querySelector("div.introduccion").classList.remove("hidden");
@@ -46,9 +47,9 @@ function changeTab(tab) {
 
 buttons.map((button) => button.addEventListener("click", (e) => {
   if (!e.target.id) {
-    changeTab(e.target.parentElement.id);
+    changeTab(e.target.parentElement.id); // if user clicks outside of the text
   } else {
-    changeTab(e.target.id);
+    changeTab(e.target.id);               // if user clicks on the text
   }
 }));
 
