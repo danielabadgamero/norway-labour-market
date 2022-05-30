@@ -35,10 +35,12 @@ main {
 .title {
   position: absolute;
   top: 10vh;
-  left: 25vw;
+  left: 0;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   font-family: 'Overlock SC', cursive;
   font-size: 7em;
   color:hsl(0, 100%, 31%);
