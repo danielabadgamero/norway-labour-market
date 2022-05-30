@@ -45,13 +45,15 @@ function changeTab(tab) {
   }
 }
 
-buttons.map((button) => button.addEventListener("click", (e) => {
-  if (!e.target.id) {
-    changeTab(e.target.parentElement.id); // if user clicks outside of the text
-  } else {
-    changeTab(e.target.id);               // if user clicks on the text
-  }
-}));
+buttons.map((button) => {
+    return button.addEventListener("click", (e) => {
+        if (!e.target.id) {
+            changeTab(e.target.parentElement.id); // if user clicks outside of the text
+        } else {
+            changeTab(e.target.id); // if user clicks on the text
+        }
+    });
+});
 
 buttons[1].addEventListener("mouseenter", () => {
   document.querySelector("div.select").classList.remove("hidden");
