@@ -11,7 +11,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: 	hsl(228, 100%, 11%);
+  background-color: hsl(228, 100%, 11%);
   font-family: 'Roboto', sans-serif;
   overflow-x: hidden;
 }
@@ -102,7 +102,7 @@ button#home {
 
 main ~ div, main > div {
   color: white;
-  margin: 100px 500px;
+  margin: 100px 0px;
   line-height: 1.5em;
   text-align: justify;
 }
