@@ -8,6 +8,10 @@ function changeTab(tab) {
   [...container.children].forEach(element => {
     element.classList.add("hidden");
   })
+  if (tab === "home") {
+    container.style.background = "url(./https://www.flytap.com/-/media/Flytap/new-tap-pages/destinations/europe/norway/oslo/destinations-oslo-banner-mobile-1024x553.jpg')";
+  } else {
+    container.style.background = "hsl(228, 100%, 11%)";
   switch (tab) {
     case "btn1":
       document.querySelector("div.introduccion").classList.remove("hidden");
