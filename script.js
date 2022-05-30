@@ -1,5 +1,5 @@
 /* version control */
-alert("v1");
+alert("Hola! Para navegar ");
 
 const container = document.querySelector("main");
 const buttons = [...document.querySelector("header").querySelectorAll("button")];
@@ -68,3 +68,7 @@ buttons[1].addEventListener("mouseenter", () => {
 document.querySelector("div.select").addEventListener("mouseleave", () => {
   document.querySelector("div.select").classList.add("hidden");
 })
+
+document.querySelector(".header-image").addEventListener("mouseenter", () => {
+  document.querySelector("div.select").classList.add("hidden");
+}
