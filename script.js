@@ -7,12 +7,12 @@ function changeTab(tab) {
   });
   if (tab === "home") {
     container.style.background = "url('./destinations-oslo-banner-mobile-1024x553.jpg')";
-    container.style.marginLeft = "200px";
-    container.style.marginRight = "700px";
+    container.style.paddingLeft = "200px";
+    container.style.paddingRight = "700px";
   } else {
     container.style.background = "hsl(228, 100%, 11%)";
-    container.style.marginLeft = "500px";
-    container.style.marginRight = "500px";
+    container.style.paddingLeft = "500px";
+    container.style.paddingRight = "500px";
   }
   switch (tab) {
     case "btn1":
