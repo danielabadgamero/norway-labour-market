@@ -109,7 +109,6 @@ button#home {
 }
 
 main ~ div, main > div {
-  color: white;
   line-height: 1.5em;
   text-align: justify;
 }
