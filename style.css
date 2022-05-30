@@ -124,7 +124,7 @@ button {
   width: 200px;
   background-color: hsl(229, 100%, 20%);
   top: calc(50% + 76px);
-  left: 446px;
+  left: 440px;
   border-radius: 10px;
 }
 
@@ -132,24 +132,4 @@ div.select > button {
   display: block;
   margin: 10px;
   width: 80%;
-}
-
-button#change-lang {
-  position: fixed;
-  bottom: 100px;
-  left: 100px;
-  border-radius: 25px;
-  border: none;
-  height: 70px;
-  width: 70px;
-  background-image: url("./media/spain-flag.png");
-  background-size: cover;
-  background-position: 50% 0;
-  transition: 1s;
-  transition-property: all;
-}
-
-button#change-lang:hover {
-  transform: scale(1.2);
-  opacity: 0.5;
 }
