@@ -9,10 +9,12 @@ function changeTab(tab) {
     container.style.background = "url('./destinations-oslo-banner-mobile-1024x553.jpg')";
     container.style.paddingLeft = "200px";
     container.style.paddingRight = "700px";
+    container.style.color = "black";
   } else {
     container.style.background = "hsl(228, 100%, 11%)";
     container.style.paddingLeft = "500px";
     container.style.paddingRight = "500px";
+    container.style.color = "white";
   }
   switch (tab) {
     case "btn1":
