@@ -10,6 +10,7 @@ function changeTab(tab) {
     container.style.paddingLeft = "200px";
     container.style.paddingRight = "700px";
     container.style.color = "black";
+    container.style.objectFit = "contain";
   } else {
     container.style.background = "hsl(228, 100%, 11%)";
     container.style.paddingLeft = "500px";
