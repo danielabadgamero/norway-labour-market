@@ -72,3 +72,4 @@ document.querySelector("div.select").addEventListener("mouseleave", () => {
 document.querySelector(".header-image").addEventListener("mouseenter", () => {
   document.querySelector("div.select").classList.add("hidden");
 })
+
