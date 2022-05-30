@@ -7,8 +7,12 @@ function changeTab(tab) {
   })
   if (tab === "home") {
     container.style.background = "url(./https://www.flytap.com/-/media/Flytap/new-tap-pages/destinations/europe/norway/oslo/destinations-oslo-banner-mobile-1024x553.jpg')";
+    container.style.marginLeft = "200px";
+    container.style.marginRight = "700px";
   } else {
     container.style.background = "hsl(228, 100%, 11%)";
+    container.style.marginLeft = "500px";
+    container.style.marginRight = "500px";
   switch (tab) {
     case "btn1":
       document.querySelector("div.introduccion").classList.remove("hidden");
