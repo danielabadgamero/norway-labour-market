@@ -46,7 +46,7 @@ function changeTab(tab) {
 }
 
 buttons.map((button) => {
-    return button.addEventListener("click", (e) => {
+    button.addEventListener("click", (e) => {
         if (!e.target.id) {
             changeTab(e.target.parentElement.id); // if user clicks outside of the text
         } else {
