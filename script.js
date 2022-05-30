@@ -1,5 +1,4 @@
-/* version control */
-alert("Hola! Para navegar ");
+console.log("I decided I don't care about the drop down menu of \"2. El desempleo\" so I'll leave it as it is. No extra buttons no dumb stuff.");
 
 const container = document.querySelector("main");
 const buttons = [...document.querySelector("header").querySelectorAll("button")];
