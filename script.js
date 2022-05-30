@@ -1,3 +1,6 @@
+/* version control */
+alert("v1");
+
 const container = document.querySelector("main");
 const buttons = [...document.querySelector("header").querySelectorAll("button")];
 
